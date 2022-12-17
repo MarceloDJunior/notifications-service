@@ -1,3 +1,4 @@
+import { Replace } from '../helpers/replace';
 import { Content } from './content';
 
 export interface NotificationData {
@@ -11,8 +12,11 @@ export interface NotificationData {
 export class Notification {
   private data: NotificationData;
 
-  constructor(data: NotificationData) {
-    this.data = data;
+  constructor(data: Replace<NotificationData, { createdAt?: Date }>) {
+    this.data = {
+      ...data,
+      createdAt: data.createdAt ?? new Date(),
+    };
   }
 
   public set recipientId(recipientId: string) {
