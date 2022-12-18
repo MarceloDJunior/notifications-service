@@ -12,6 +12,7 @@
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "strict": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
@@ -30,7 +31,7 @@
       ],
       "@test/*": [
         "./test/*"
-      ],
+      ]
     }
   }
 }
