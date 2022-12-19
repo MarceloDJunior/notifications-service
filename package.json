@@ -1,8 +1,8 @@
 {
   "name": "notifications-service",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "A notification microservice created during RocketSeat's Ignite Lab",
+  "author": "Marcelo Dornelles Junior",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
