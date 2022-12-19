@@ -22,7 +22,7 @@ export class InMemoryNotificationsRepository
     );
   }
 
-  async countManyByRecipientId(recipientId: string): Promise<number> {
+  async countByRecipientId(recipientId: string): Promise<number> {
     return this.notifications.filter((item) => item.recipientId === recipientId)
       .length;
   }
